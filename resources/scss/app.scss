@@ -1,1 +1,190 @@
 @import '~bootstrap/scss/bootstrap';
+
+/*
+###############
+- Debug
+- Common
+- Utilities
+- MediaQuery
+- Header
+- Main
+- Footer
+###############
+*/
+
+
+/* #region Debug */
+
+/* #endregion Debug */
+
+
+/* #region Common */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* #endregion Common */
+
+
+/* #region Utilities */
+
+/* #endregion Utilities */
+
+
+/* #region MediaQuery */
+
+/* #region Desktops & Large screens */
+@media screen and (max-width: 1200px) {
+    /* Desktops & Large screens */
+}
+
+/* #endregion Desktops & Large screens */
+
+/* #region Small screens & Laptops */
+@media screen and (max-width: 1024px) {
+    /* Small screens & Laptops */
+}
+
+/* #endregion Small screens & Laptops */
+
+/* #region iPads & Tablets */
+@media screen and (max-width: 768px) {
+    /* iPads & Tablets */
+}
+
+/* #endregion iPads & Tablets */
+
+/* #region Mobile */
+@media screen and (max-width: 480px) {
+    /* Mobile */
+}
+
+/* #endregion Mobile */
+
+/* #endregion MediaQuery */
+
+
+/* #region Header */
+header {
+    .top {
+        /* background-color: rgb(65, 140, 252); */
+        height: 30px;
+    }
+
+    .bottom {
+        background-color: white;
+        height: 120px;
+
+        .my_active {
+            color: rgb(65, 140, 252);
+            text-decoration: underline;
+            text-decoration-color: rgb(65, 140, 252);
+            text-decoration-thickness: 10px;
+        }
+
+        .my_input {
+            border: none;
+            font-weight: bold;
+            text-decoration: underline;
+            text-decoration-color: rgb(65, 140, 252);
+        }
+    }
+}
+
+/* #endregion Header */
+
+
+/* #region Main */
+.jumbo {
+    background-image: url("/img/jumbotron.jpg");
+    height: 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.comics {
+    background-color: rgba(0, 0, 0, 0.856);
+}
+
+.price_avaiable,
+.check_avaiable {
+    background-color: rgb(83, 189, 83);
+    padding: 1em 0;
+    border-bottom: 1px solid #333;
+}
+
+.comic_link {
+    text-decoration: none;
+}
+
+.blue_coso {
+    height: 100px;
+}
+
+.comic_image {
+    position: relative;
+
+    .my_img_size {
+        position: absolute;
+        top: -350px;
+
+        img {
+            max-width: 200px;
+        }
+    }
+}
+
+/* #endregion Main */
+
+
+/* #region Footer */
+footer {
+    overflow: auto;
+    white-space: nowrap;
+
+    .top_footer {
+        background-color: rgb(65, 140, 252);
+        color: white;
+        z-index: 999;
+
+        .img_svg {
+            max-width: 120px;
+        }
+    }
+
+    .center_footer {
+        background-image: url("/img/footer-bg.jpg");
+        color: white;
+
+        li,
+        p,
+        span {
+            color: rgb(155, 155, 155);
+
+            a {
+                text-decoration: none;
+            }
+        }
+
+        .center_footer_right {
+            position: relative;
+
+            img {
+                position: absolute;
+                top: -20%;
+                /* overflow: hidden;
+                z-index: 0; */
+            }
+        }
+    }
+
+    .bottom_footer {
+        background-color: #333;
+        color: white;
+    }
+}
+
+/* #endregion Footer */
