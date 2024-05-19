@@ -38,13 +38,13 @@
                                 </strong>
                             </h4>
                             <ul class="list-unstyled">
-                                <li><a href=""></a>Characters</li>
-                                <li><a href=""></a>Comics</li>
-                                <li><a href=""></a>Movies</li>
-                                <li><a href=""></a>TV</li>
-                                <li><a href=""></a>Games</li>
-                                <li><a href=""></a>Videos</li>
-                                <li><a href=""></a>News/li>
+                                <li><a class="list-group-item-action" href="{{route('characters')}}">Characters</a></li>
+                                <li><a class="list-group-item-action" href="{{route('movies')}}">Movies</a></li>
+                                <li><a class="list-group-item-action" href="{{route('comics.index')}}">Comics</a></li>
+                                <li><a class="list-group-item-action" href="{{route('tv')}}">TV</a></li>
+                                <li><a class="list-group-item-action" href="{{route('games')}}">Games</a></li>
+                                <li><a class="list-group-item-action" href="{{route('videos')}}">Videos</a></li>
+                                <li><a class="list-group-item-action" href="{{route('news')}}">News</a></li>
                             </ul>
                             <h4>
                                 <strong>
@@ -52,8 +52,16 @@
                                 </strong>
                             </h4>
                             <ul class="list-unstyled">
-                                <li>Shop DC</li>
-                                <li>Shop DC Collectibles</li>
+                                <li>
+                                    <a class="list-group-item-action" href="{{route('shop')}}">
+                                        Shop DC
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="list-group-item-action" href="{{route('collectibles')}}">
+                                        Shop DC Collectibles
+                                    </a>
+                                </li>
                             </ul>
                         </div>
                         <div class="col-4">

@@ -54,4 +54,6 @@ Route::get('/shop', function () {
     return view('guests.shop');
 })->name('shop');
 
-Route::get('/comics', [ComicController::class,'index'])->name('comics');
+Route::get('/comics', [ComicController::class,'index'])->name('comics.index');
+
+Route::get('/comics/{id}', [ComicController::class, 'show'])->name('comics.show');

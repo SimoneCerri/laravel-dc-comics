@@ -12,7 +12,10 @@ class ComicController extends Controller
      */
     public function index()
     {
-        $comics = Comic::orderByDesc('id')->get();
+        /* $comics = Comic::orderByDesc('id')->get(); */
+        $comics = config('comics.comics');
+        /* dd($comics);
+        dd($comics[2]); */
         return view('guests.comics.index',compact('comics'));
     }
 
@@ -37,7 +40,8 @@ class ComicController extends Controller
      */
     public function show(Comic $comic)
     {
-        //
+        dd($comic);
+        return view('guests.comics.show', compact('comic'));
     }
 
     /**
