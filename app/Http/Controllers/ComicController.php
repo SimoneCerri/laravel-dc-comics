@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use App\Models\Comic;
 use Illuminate\Http\Request;
 
+use function PHPUnit\Framework\isEmpty;
+
 class ComicController extends Controller
 {
     /**
@@ -12,8 +14,8 @@ class ComicController extends Controller
      */
     public function index()
     {
-        /* $comics = Comic::orderByDesc('id')->get(); */
-        $comics = config('comics.comics');
+        $comics = Comic::orderByDesc('id')->get();
+        /* $comics = config('comics.comics'); */
         /* dd($comics);
         dd($comics[2]); */
         return view('guests.comics.index',compact('comics'));
@@ -41,6 +43,7 @@ class ComicController extends Controller
     public function show(Comic $comic)
     {
         dd($comic);
+        //dd(isEmpty($comic));
         return view('guests.comics.show', compact('comic'));
     }
 
